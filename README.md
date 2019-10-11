@@ -4,9 +4,11 @@
 
 <h3> A running instance of EKS with an account on dockerhub is required </h3>
 
+Install Jenkis https://linuxize.com/post/how-to-install-jenkins-on-ubuntu-18-04/
+
 Install EKS https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
 
-Install docker https://docs.docker.com/install/
+Install Docker https://docs.docker.com/install/
 
 Create an account in dockerhub https://hub.docker.com/
 
