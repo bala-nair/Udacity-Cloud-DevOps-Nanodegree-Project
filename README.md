@@ -1,10 +1,10 @@
-# k8s-green-blue-deploy-minikube
+# Udacity-Cloud-DevOps-Nanodegree-Project
 
 <h1> Prerequisites </h1>
 
-<h3> A running instance of Minikube with an account on dockerhub is required </h3>
+<h3> A running instance of EKS with an account on dockerhub is required </h3>
 
-Install minikube https://kubernetes.io/docs/tasks/tools/install-minikube/
+Install EKS https://docs.aws.amazon.com/eks/latest/userguide/getting-started.html
 
 Install docker https://docs.docker.com/install/
 
@@ -20,7 +20,7 @@ Create an account in dockerhub https://hub.docker.com/
 
 #./upload_docker.sh (upload the green image to docker hub)
 
-ensure minikube is running 
+ensure EKS is running 
 
 #kubectl apply -f ./blue-controller.json (create replication controller for blue)
 
@@ -28,13 +28,13 @@ ensure minikube is running
 
 #kubectl apply -f ./blue-green-service.json (create the service)
 
-#minikube service bluegreenlb --url (get the url)
+#kubectl get svc
 
 Update the service to redirect to green by changing the selector to app=green
 
 #kubectl apply -f ./blue-green-service.json (after making the above changes)
 
-#minikube service bluegreenlb --url (now the color of index page should have changed)
+#kubectl get svc (now the color of page should have changed)
 
 
 
