@@ -12,6 +12,11 @@ Install Docker https://docs.docker.com/install/
 
 Create an account in dockerhub https://hub.docker.com/
 
+Add dockerhub credentials to Jenkins https://medium.com/@gustavo.guss/jenkins-building-docker-image-and-sending-to-registry-64b84ea45ee9
+
+Add AWS Credentials to Jenkins https://medium.com/faun/ci-cd-pipeline-with-jenkins-and-aws-s3-c08a3656d381
+
+
 <h3> Steps </h3>
 
 #./run_docker.sh (For the blue image)
